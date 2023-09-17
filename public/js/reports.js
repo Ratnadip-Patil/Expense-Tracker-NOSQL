@@ -23,7 +23,7 @@ async function getDailyReport(e) {
 
     let totalAmount = 0;
     const res = await axios.post(
-      "http://localhost:3000/reports/dailyReports",
+      "https://expense-tracker-nosql.onrender.com/reports/dailyReports",
       {
         date: formattedDate,
       },
@@ -93,7 +93,7 @@ async function getMonthlyReport(e) {
 
     let totalAmount = 0;
     const res = await axios.post(
-      "http://localhost:3000/reports/monthlyReports",
+      "https://expense-tracker-nosql.onrender.com/reports/monthlyReports",
       {
         month: formattedMonth,
       },
